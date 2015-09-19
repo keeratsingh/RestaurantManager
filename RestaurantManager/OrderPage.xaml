@@ -8,6 +8,36 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width=".5*"/>
+            <ColumnDefinition Width=".25*"/>
+            <ColumnDefinition Width=".25*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height=".2*"/>
+            <RowDefinition Height=".1*"/>
+            <RowDefinition Height=".5*"/>
+            <RowDefinition Height=".1*"/>
+            <RowDefinition Height=".1*"/>
+        </Grid.RowDefinitions>
+        
+        <TextBlock Grid.Row="1" Text="Special Requests:" Grid.Column="1"
+                   VerticalAlignment="Top" HorizontalAlignment="Left" 
+                   Style="{ThemeResource SubheaderTextBlockStyle}" 
+                   />
+        <TextBlock Grid.Row="1" Text="Order Items:" Grid.Column="2"
+                   VerticalAlignment="Top" HorizontalAlignment="Left" 
+                   Style="{ThemeResource SubheaderTextBlockStyle}" 
+                   />
 
+        <TextBlock Grid.Row="4" Text="**Add to Order**" Grid.Column="0"
+                   VerticalAlignment="Center" HorizontalAlignment="Center" 
+                   Style="{ThemeResource SubheaderTextBlockStyle}" 
+                   />
+        <TextBlock Grid.Row="4" Text="**Submit Order**" Grid.Column="1" 
+                   Grid.ColumnSpan="2"
+                   VerticalAlignment="Center" HorizontalAlignment="Center" 
+                   Style="{ThemeResource SubheaderTextBlockStyle}" 
+                   />
     </Grid>
 </Page>

@@ -8,6 +8,36 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width=".5*"/>
+            <ColumnDefinition Width=".5*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height=".4*"/>
+            <RowDefinition Height=".1*"/>
+            <RowDefinition Height=".5*"/>
+        </Grid.RowDefinitions>
+        <TextBlock x:Name="textTitle" Text="Restaurant Manager"
+                   VerticalAlignment="Bottom" HorizontalAlignment="Center" 
+                   Grid.ColumnSpan="2" 
+                   Style="{ThemeResource HeaderTextBlockStyle}" />
+
+        <TextBlock x:Name="textSubTitle" Text="Internal Test Version" 
+                   Grid.Column="0" Grid.Row="1" 
+                   VerticalAlignment="Bottom" HorizontalAlignment="Center"
+                   Grid.ColumnSpan="2" 
+                   Style="{ThemeResource SubtitleTextBlockStyle}" 
+                   />
+        
+        <TextBlock Grid.Row="2" Text="**Go to Orders View**" Grid.Column="0"
+                   VerticalAlignment="Center" HorizontalAlignment="Center" 
+                   Style="{ThemeResource SubheaderTextBlockStyle}" 
+                   />
+        
+        <TextBlock Grid.Row="2" Text="**Submit Order**" Grid.Column="1"
+                   VerticalAlignment="Center" HorizontalAlignment="Center" 
+                   Style="{ThemeResource SubheaderTextBlockStyle}" 
+                   />
 
     </Grid>
 </Page>

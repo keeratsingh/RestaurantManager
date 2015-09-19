@@ -26,5 +26,6 @@ namespace RestaurantManager
         {
             this.InitializeComponent();
         }
+
     }
 }
