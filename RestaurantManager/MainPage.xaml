@@ -29,15 +29,11 @@
                    Style="{ThemeResource SubtitleTextBlockStyle}" 
                    />
         
-        <TextBlock Grid.Row="2" Text="**Go to Orders View**" Grid.Column="0"
-                   VerticalAlignment="Center" HorizontalAlignment="Center" 
-                   Style="{ThemeResource SubheaderTextBlockStyle}" 
-                   />
-        
-        <TextBlock Grid.Row="2" Text="**Submit Order**" Grid.Column="1"
-                   VerticalAlignment="Center" HorizontalAlignment="Center" 
-                   Style="{ThemeResource SubheaderTextBlockStyle}" 
-                   />
+        <Button x:Name="btnViewOrders" Grid.Row="2" Content="Go to Orders View" Grid.Column="0"
+                   VerticalAlignment="Center" HorizontalAlignment="Center" Click="btnViewOrders_Click"/>
+
+        <Button x:Name="btnSubmitOrder" Grid.Row="2" Content="Submit Order" Grid.Column="1"
+                   VerticalAlignment="Center" HorizontalAlignment="Center" Click="btnSubmitOrder_Click" />
 
     </Grid>
 </Page>

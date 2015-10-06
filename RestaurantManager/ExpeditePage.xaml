@@ -13,9 +13,14 @@
             <RowDefinition Height=".1*"/>
         </Grid.RowDefinitions>
 
-        <TextBlock Grid.Row="2" Text="**Clear All Orders**" Grid.Column="0"
+        
+        <GridView Grid.Row="0">
+        </GridView>
+        <AppBar Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3">
+            <AppBarButton x:Name="btnAppBarHome" Icon="Home" Label="Home" Click="btnAppBarHome_Click"/>
+        </AppBar>
+        <Button Grid.Row="2" Content="Clear All Orders" Grid.Column="0"
                     VerticalAlignment="Center" HorizontalAlignment="Center" 
-                   Style="{ThemeResource SubheaderTextBlockStyle}" 
                    />
     </Grid>
 </Page>

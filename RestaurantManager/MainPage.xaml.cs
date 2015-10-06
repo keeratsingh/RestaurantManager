@@ -22,10 +22,24 @@ namespace RestaurantManager
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        ExpeditePage obj = new ExpeditePage();
+
         public MainPage()
         {
             this.InitializeComponent();
         }
 
+        
+
+        private void btnViewOrders_Click(object sender, RoutedEventArgs e)
+        {
+            
+            Frame.Navigate(typeof(ExpeditePage));
+        }
+
+        private void btnSubmitOrder_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(OrderPage));
+        }
     }
 }
